@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', href='css/reset.css')
+        link(rel='stylesheet', href='css/style.css')        
+        title ToDoList
+    body
+        section.header
+            h1.title_header ToDoList
+        section.main
+            div.wrapper
+                form.add__form(method='post' action='https://mysite.ru/index')
+                    input(
+                        type='text'
+                        class='add__task' 
+                        placeholder='Введите задачу'
+                        name='addtask'
+                        required
+                    )
+                    button(
+                        type='submit'
+                        class='submit'                    
+                    ) Добавить задачу
+                ul.todolist__items
+                    li.todolist__item 
+                        label 
+                            input.todolist__input(type='checkbox')
+                            span Сходить в магазин 
+                    li.todolist__item
+                        label
+                            input.todolist__input(type="checkbox")
+                            span Приготовить обед
+                    li.todolist__item 
+                        label
+                            input.todolist__input(type="checkbox")
+                            span Пофиксить баги
+                p.empty_tasks.hidden 
+                    span Все задачи выполнены! 
+        template#text__template
+            li.todolist__item
+                label
+                    input.todolist__input(type="checkbox")
+                    span
+                                
+
+
+
+
+        script(src="js/script.js")

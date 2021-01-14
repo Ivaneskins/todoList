@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDoList</title>
+  </head>
+  <body>
+    <section class="header">
+      <h1 class="title_header">ToDoList</h1>
+    </section>
+    <section class="main">
+      <div class="wrapper">
+        <form class="add__form" method="post" action="https://mysite.ru/index">
+          <input class="add__task" type="text" placeholder="Введите задачу" name="addtask" required>
+          <button class="submit" type="submit">Добавить задачу</button>
+        </form>
+        <ul class="todolist__items">
+          <li class="todolist__item"> 
+            <label> 
+              <input class="todolist__input" type="checkbox"><span>Сходить в магазин </span>
+            </label>
+          </li>
+          <li class="todolist__item">
+            <label>
+              <input class="todolist__input" type="checkbox"><span>Приготовить обед</span>
+            </label>
+          </li>
+          <li class="todolist__item"> 
+            <label>
+              <input class="todolist__input" type="checkbox"><span>Пофиксить баги</span>
+            </label>
+          </li>
+        </ul>
+        <p class="empty_tasks hidden"> <span>Все задачи выполнены! </span></p>
+      </div>
+    </section>
+    <template id="text__template">
+      <li class="todolist__item">
+        <label>
+          <input class="todolist__input" type="checkbox"><span></span>
+        </label>
+      </li>
+    </template>
+    <script src="js/script.js"></script>
+  </body>
+</html>
