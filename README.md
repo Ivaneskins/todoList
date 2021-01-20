@@ -1,3 +1,3 @@
-# Check my ToDoList
+# my ToDoList
 
 https://ivaneskins.github.io/todoList/
